@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 004 Tratamento de Dados</title>
-    
+    <title>Document</title>
     <style>
-        body{background-color: black;
-        color: brown;
-        font: normal 25pt arial;}
-        h1{color: crimson;}
-    </style>
+    body{font-family: Arial, Helvetica, sans-serif; 
+    background-color: black; 
+    color: white; 
+    font-size: 20pt;}</style>
 </head>
 <body>
-    <h1>Aula 004 Tratamento de Dados</h1>
-    <p>Você pode fazer muito mais e muito melhor !!!</p>
 
     <script>
-       var nome = window.prompt(`Qual é o seu nome ?`)
-       document.write(`Seu nome <strong>${nome}</strong> em letras maiúsculas é: ${nome.toUpperCase()}  <br/>`)
-       document.write(`Seu nome <strong>${nome}</strong> em letras minúsculas é: ${nome.toLowerCase()}  <br/>`)
-       document.write(`O seu nome tem <strong>${nome.length}</strong> letras:  <br/>`)
+        var nome = window.prompt('Qual é o seu nome? ')
+        document.write(`Olá, <strong>${nome}!</strong> Seu nome tem ${nome.length} letras. <br/> `)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()} <br/>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()} <br/>`)
+
     </script>
     
 </body>
