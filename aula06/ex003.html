@@ -11,9 +11,12 @@
     <h1>Olá Mundo!</h1> <!--Comentário em HTML-->
     <p>Já me livrei d maldição!!</p>
     <script>
-       var n1 = window.prompt('Digite um número: ') 
-       var n2 = window.prompt('Digie outro número: ')
-       window.alert('O resultado da soma é: ' n1 + n2 )
+       var n1 = Number(window.prompt('Digite um número: '))
+       var n2 = Number(window.prompt('Digie outro número: '))
+       var s = n1 + n2
+       window.alert('A soma dos valores é ' + String(s)) // Concatenação
+       // (Number + Number) para adição
+       // (String + String) para concatenação
 
     </script>
     
