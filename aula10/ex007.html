@@ -4,42 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somando Números</title>
+    <title>Somando Valores</title>
     <style>
-    body{
-        background-color: black; 
-        font-weight: normal;
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;}
-
-    h1{
-        text-align: center;}
-
-    input{
-        font: normal 18pt arial;
-        width:100px ;}
-
-    #res{
-        padding-top: 30px;}
-
-</style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+            font-weight: normal;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 20pt;
+            text-align: center;
+            text-shadow: 5px 5px 5px 10px white;
+        }
+        input{
+            width: 100px;
+            height: 50px;
+        }
+        div{
+            padding-top: 20px ;
+        }
+    </style>
 </head>
 <body>
     <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
+    <input type="number" name="txtn1" id="txtn1"> <strong>+</strong>
+    <input type="number" name="txtn2" id="txtn2"> <strong>=</strong>
     <input type="button" value="Somar" onclick="somar()">
     <div id="res">Resultado</div>
-
     <script>
         function somar(){
-        var tn1 = window.document.getElementById('txtn1')
-        var tn2 = window.document.querySelector('input#txtn2')
-        var res = window.document.getElementById('res')
-        var n1 = Number(tn1.value)
-        var n2 = Number(tn2.value)
-        var s = n1 + n2
-        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`}    
+            var tx1 = window.document.getElementById('txtn1') 
+            var tx2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tx1.value)
+            var n2 = Number(tx2.value)
+            var s = n1 + n2
+            res.innerHTML=(`A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`)
+        }
     </script>
     
 </body>
