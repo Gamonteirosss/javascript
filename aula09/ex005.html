@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros passos com DOM</title>
+    <title>Primeiros passos DOM</title>
     <style>
         body{
             background-color: black;
@@ -12,25 +12,30 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 15pt;
             font-weight: normal;
+            padding: 10px;
+        }
+        .title{
+            text-align: center;
+        }
+        #msg{
+            padding-left: 10px;
+            border-radius: 50px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Iniciando os estudos DOM</h1>
+    <h1 class="title">Inciando os estudos DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div id="msg">Click em mim</div><br/>
-    
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique Aqui...</div><br/>
     <script>
-        var corpo = window.document.body
-        var p1 = window.document.getElementsByTagName('p')[1]
-        var d = window.document.getElementById('msg')
-        window.document.write(p1.innerHTML)
-        d.style.backgroundColor = 'gray'
-        d.innerText = ' Estou aguardando...'
-        d.style.color = 'black'
-
-        
+        var p1 = window.document.getElementById('msg')
+        var p2 = window.document.getElementsByTagName('p')[1]
+        p1.style.background = 'grey'
+        p1.style.color = 'blue'
+        window.document.write(p2.innerHTML)
     </script>
+    
 </body>
 </html>
