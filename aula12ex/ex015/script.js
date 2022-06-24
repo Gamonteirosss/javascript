@@ -13,6 +13,7 @@ if (fano.value.length == 0 || fano.value > ano) {
         gênero ='Homem'
         if (idade >= 0 && idade <10) {
             // Criança
+            img.setAttribute('src')
         } else if (idade < 21) {
             // Jovem
         } else if (idade < 50 ){
