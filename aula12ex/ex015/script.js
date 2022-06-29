@@ -24,7 +24,7 @@ if (fano.value.length == 0 || Number(fano.value) > ano) {
             img.setAttribute('src', 'homem.png')
         } else {
             // Idoso
-            img.setAttribute('src', 'idosa.png')
+            img.setAttribute('src', 'idoso.png')
         }
     
     } else if (fsex[1].checked) {
