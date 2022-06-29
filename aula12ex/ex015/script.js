@@ -1,11 +1,11 @@
 function verificar() {
-var data = new Date
+var data = new Date()
 var ano = data.getFullYear()
 var fano = document.getElementById('txtano')
 var res = document.querySelector('div#res')
-if (fano.value.length == 0 || fano.value > ano) {
+if (fano.value.length == 0 || Number(fano.value) > ano) {
     window.alert('[ERRO] Verifique os dados e tente novamente!')
-} else{
+} else {
     var fsex = document.getElementsByName('radsex')
     var idade = ano - Number(fano.value)
     var gênero = ''
@@ -19,7 +19,7 @@ if (fano.value.length == 0 || fano.value > ano) {
         } else if (idade < 21) {
             // Jovem
             img.setAttribute('src', 'garoto.png')
-        } else if (idade < 50 ){
+        } else if (idade < 50 ) {
             // Adulto
             img.setAttribute('src', 'homem.png')
         } else {
@@ -35,7 +35,7 @@ if (fano.value.length == 0 || fano.value > ano) {
         } else if (idade < 21) {
             // Jovem
             img.setAttribute('src', 'garota.png')
-        } else if (idade < 50 ){
+        } else if (idade < 50 ) {
             // Adulto
             img.setAttribute('src', 'mulher.png')
         } else {
