@@ -4,37 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros passos DOM</title>
+    <title>Primeiros passos com DOM</title>
     <style>
         body{
-            background-color: black;
+            background-color:rgb(95, 168, 192);
             color: white;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 15pt;
             font-weight: normal;
-            padding: 10px;
-        }
-        .title{
             text-align: center;
+            text-shadow: 0px 0px 1px black;
+            font-size: 18pt;
         }
-        #msg{
-            padding-left: 10px;
-            border-radius: 50px;
-            text-align: center;
+        a{
+            text-decoration: none; 
         }
+        
     </style>
 </head>
 <body>
-    <h1 class="title">Inciando os estudos DOM</h1>
-    <p>Aqui vai o resultado</p>
+
+    <h1>Iniciando estudos DOM</h1>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div id="msg">Clique Aqui...</div><br/>
+    <div><a href="ex005b.html" target="_blank" >Clique em mim</a></div>
+    <p>Aqui vai o resultado</p>
+
     <script>
-        var p1 = window.document.getElementById('msg')
-        var p2 = window.document.getElementsByTagName('p')[1]
-        p1.style.background = 'grey'
-        p1.style.color = 'blue'
-        window.document.write(p2.innerHTML)
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerHTML)
+        //Alternativas de pesquisa 
+
+        
+
     </script>
     
 </body>
