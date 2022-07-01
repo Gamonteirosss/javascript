@@ -26,7 +26,6 @@ if (fano.value.length == 0 || Number(fano.value) > ano) {
             // Idoso
             img.setAttribute('src', 'idoso.png')
         }
-    
     } else if (fsex[1].checked) {
         gênero ='Mulher'
         if (idade >= 0 && idade <10) {
@@ -42,12 +41,12 @@ if (fano.value.length == 0 || Number(fano.value) > ano) {
             // Idoso
             img.setAttribute('src', 'idosa.png')
         }
-        
     }
     res.style.textAlign = 'center'
     res.innerHTML= `Detectamos ${gênero} com ${idade} anos.`
     res.appendChild(img)
 
 }
+
 
 }
